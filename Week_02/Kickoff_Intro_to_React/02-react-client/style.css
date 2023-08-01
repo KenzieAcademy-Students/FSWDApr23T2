@@ -1,0 +1,30 @@
+.brand,
+.brand:visited {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.col-third {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 31.333%;
+  margin: 0 1%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1,
+h2 {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
