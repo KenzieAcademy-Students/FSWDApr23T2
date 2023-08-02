@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.row > * {
+  flex: 1;
+}
+
+.focused {
+  box-shadow: 5px 5px 5px orange;
+}

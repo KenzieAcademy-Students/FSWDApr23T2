@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events in React</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Events</h1>
+  <section>
+    <h3>Synopsis</h3>
+    <p>
+      In this lecture, we will cover events in React. The page you see right now is,
+      once again, created with vanilla JS and HTML. The purpose of this is to
+      juxtapose the imperative vs declarative natures of JavaScript versus React.
+    </p>
+  </section>
+  <div class="row">
+    <section>
+      <h3>Click Events</h3>
+      <button id="click-btn">Click me to show an alert</button>
+    </section>
+    <section>
+      <h3>Focus/Blur Events</h3>
+      <input id="focus-blur-input" type="text" name="focus" placeholder="Click to see effect" />
+    </section>
+    <section>
+      <h3>Input Change Events</h3>
+      <input type="text" name="change" id="change-input" placeholder="Enter some value to see console logs">
+    </section>
+    <section>
+      <h3>Form Submit Events</h3>
+      <form id="submit-form">
+        <label>
+          Name:<br />
+          <input type="text" name="name" id="name" autocomplete="off">
+        </label>
+        <br />
+        <label>
+          Email:<br />
+          <input type="text" name="email" id="email" autocomplete="off">
+        </label>
+        <br />
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
