@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <meta name="description" content="Kenzie" />
+  <meta name="author" content="Kenzie" />
+  <meta name="keywords" content="Kenzie" />
+
+  <!-- Title Page-->
+  <title>Kenzie Movie Catalog</title>
+
+  <!-- CSS-->
+  <link href="style.css" rel="stylesheet" media="all" />
+</head>
+
+<body style="text-align: center;">
+  <h1>Kenzie Movie Catalog</h1>
+
+  <form id="search-bar">
+    <div class="form-group">
+      <label for="title">Search by Title:</label>
+      <input type="text" name="title" id="title">
+    </div>
+    <div class="form-group">
+      <label for="cast">Search by Cast:</label>
+      <input type="text" name="cast" id="cast">
+    </div>
+    <div class="form-group">
+      <input type="reset" value="Cancel" id="clear-form">
+      <input type="submit" value="Search">
+    </div>
+  </form>
+
+  <div id="movies"></div>
+  <script src="movieDetails.js"></script>
+  <script src="movies.js"></script>
+  <script src="code.js"></script>
+  <script src="validate.js"></script>
+</body>
+
+</html>
