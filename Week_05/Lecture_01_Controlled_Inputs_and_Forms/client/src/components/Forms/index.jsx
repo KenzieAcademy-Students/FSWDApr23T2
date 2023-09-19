@@ -15,22 +15,26 @@ function Forms() {
   const [data, setData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
 
-  const validateInputs = () => {
+  function validateInputs() {
     const newErrors = {};
     const { email, password } = data;
 
-    if (!email) newErrors.email = "Email is required.";
-    else if (!EMAIL_REGEX.test(email))
+    if (!email) {
+      newErrors.email = "Email is required.";
+    } else if (!EMAIL_REGEX.test(email)) {
       newErrors.email = "Invalid email format.";
+    }
 
-    if (!password) newErrors.password = "Password is required.";
-    else if (password.length < 8)
+    if (!password) {
+      newErrors.password = "Password is required.";
+    } else if (password.length < 8) {
       newErrors.password = "Password must contain at least 8 characters.";
-    else if (password.length > 32)
+    } else if (password.length > 32) {
       newErrors.password = "Password cannot be longer than 32 characters.";
+    }
 
     return newErrors;
-  };
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
